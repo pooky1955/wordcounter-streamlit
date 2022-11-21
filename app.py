@@ -6,7 +6,7 @@ import clipboard as c
 
 
 st.write("# Word Counter Excluding Quotations and Citations!")
-input_text = st.text_input("Enter your text to count without words and quotes")
+input_text = st.text_area("Enter your text to count without words and quotes")
 quotes_patt = re.compile('\"[^\"]*\"')
 parent_patt = re.compile('\([^)]*\)')
 without_quotations = quotes_patt.sub('',input_text)
