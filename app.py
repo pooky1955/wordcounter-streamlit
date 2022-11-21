@@ -2,8 +2,6 @@
 import streamlit as st
 import sys
 import re
-import clipboard as c
-
 
 st.write("# Word Counter Excluding Quotations and Citations!")
 input_text = st.text_area("Enter your text to count without words and quotes")
